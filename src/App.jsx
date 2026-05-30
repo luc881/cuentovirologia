@@ -1,0 +1,6 @@
+import './App.css'
+import Story from './components/Story'
+
+export default function App() {
+  return <Story />
+}
