@@ -334,9 +334,27 @@ export default function Story() {
         <Reveal>
           <header style={{ textAlign: 'center', marginBottom: '10vh', position: 'relative' }}>
             <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1.8, delay: 0.2 }}
+              style={{ fontFamily: "'Playfair Display', serif", fontStyle: 'italic', fontSize: 'clamp(0.75rem, 1.8vw, 0.95rem)', color: 'rgba(255,255,255,0.28)', letterSpacing: '0.06em', marginBottom: '0.6rem' }}
+            >
+              Para
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 6 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.4, delay: 0.5 }}
+              style={{ fontFamily: "'Playfair Display', serif", fontStyle: 'italic', fontSize: 'clamp(1rem, 2.5vw, 1.3rem)', color: 'rgba(255,255,255,0.55)', letterSpacing: '0.04em', marginBottom: '2.5rem' }}
+            >
+              Flores Buendia Zara Ursula
+            </motion.p>
+
+            <motion.p
               initial={{ opacity: 0, letterSpacing: '0.6em' }}
               animate={{ opacity: 0.4, letterSpacing: '0.45em' }}
-              transition={{ duration: 1.5 }}
+              transition={{ duration: 1.5, delay: 0.9 }}
               style={{ fontFamily: "'Space Mono', monospace", fontSize: '0.58rem', color: '#00d4ff', textTransform: 'uppercase', marginBottom: '2rem' }}
             >
               Un cuento de virología
